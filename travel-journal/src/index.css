@@ -1,9 +1,84 @@
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Inter, sans-serif;
 }
 
+header {
+  background-color: #F55A5A;
+  padding: 16px;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+header > h1 {
+  font-weight: medium;
+  font-size: 14.46px;
+}
+.header-image{
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+}
+.container {
+  margin: 45px 40px;
+}
+.main-image-container {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  margin-right: 19px;
+  flex-shrink: 0; /* keep width → create horizontal scroll bar */
+}
+.main-image-container .main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+article {
+  display: flex;
+  margin-bottom: 36px;
+}
+.marker {
+  width: 7px;
+  margin-right: 4px;
+}
+span{
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+.info-container a{
+  color: #2B283A;
+  font-size: 0.7rem;
+}
+.info-container a:visited {
+    color: #918E9B;
+}
+.info-container h2 {
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+.info-container .trip-dates{
+  font-weight: bold;
+  font-size: 0.7rem;
 
+}
+.info-container .entry-text {
+  font-weight: regular;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  display: -webkit-box; /* Create a vertical "box layout" (flex-like)*/
+  -webkit-line-clamp: 3; /* number of lines to display */
+  line-clamp: 3; /* Standard property for better compatibility */
+  -webkit-box-orient: vertical;  /* Set the direction of the box to vertical */
+  overflow: hidden; /* Hide excess text outside the frame */
+  text-overflow: ellipsis; /* replace the ... sign when it is cut */
+}
