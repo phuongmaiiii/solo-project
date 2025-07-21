@@ -5,3 +5,52 @@ body {
   margin: 0;
   font-family: Karla, sans-serif;
 }
+header {
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  padding: 20px;
+  height: 65px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header > .header--image {
+  width: 40px;
+  height: auto;
+  margin-right: 6px;
+}
+header > h1 {
+  font-weight: bold;
+  font-size: 20.75px;
+}
+header > h4 {
+  font-weight: normal;
+  font-size: 14.46px;
+  margin-left: auto;
+}
+main {
+  padding: 36px;
+}
+.meme--form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 15px;
+}
+.meme--button {
+  grid-column: 1 / -1;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Karla, sans-serif;
+  cursor: pointer;
+
+}
+.meme--input {
+  font-family: Karla, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #672280;
+  text-indent: 5px;
+}
