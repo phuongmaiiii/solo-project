@@ -1,2 +1,3 @@
 # solo-project
-Travel Journal
+- Travel Journal
+- Meme Generator
