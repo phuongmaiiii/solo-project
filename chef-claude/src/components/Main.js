@@ -8,19 +8,23 @@ function Main() {
                 </li>
             ));
 
-    function handleSubmit(event) {
-        event.preventDefault();
+    function handleSubmit(formData) {
+        /*event.preventDefault();
 
         const formData = new FormData(event.currentTarget);
         const newIngredient = formData.get("ingredient");
         event.currentTarget.reset(); // Clear the input field after submission
         // Note: In a real application, you would update the state here to re-render the component
         setIngredients(preIngredients => [...preIngredients, newIngredient]); // Update state to trigger re-render
+        */
+       const newIngredient = formData.get("ingredient");
+       setIngredients (prevIngredients => [...prevIngredients, newIngredient]);
+      
 
     }
   return (
     <div className="main-container">
-        <form onSubmit={handleSubmit}>
+        <form action={handleSubmit} className="ingredient-form">
             <input  aria-label="Add ingredient" 
                     type="text" 
                     placeholder="e.g. pasta carbonara"
