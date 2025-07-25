@@ -1,5 +1,6 @@
+import React from 'react';
 function Main() {
-    const ingredients = ["Chicken", "Oregano", "Pasta", "Tomato Sauce"];
+    const [ingredients, setIngredients] = React.useState([]);
 
     const ingredientListItems = ingredients.map((ingredient, index) => (
                 <li key={index}>
@@ -8,18 +9,14 @@ function Main() {
             ));
 
     function handleSubmit(event) {
-        console.log("Form submitted");
         event.preventDefault();
 
         const formData = new FormData(event.currentTarget);
         const newIngredient = formData.get("ingredient");
-        console.log("New ingredient:", newIngredient);
-        ingredients.push(newIngredient);
         event.currentTarget.reset(); // Clear the input field after submission
         // Note: In a real application, you would update the state here to re-render the component
+        setIngredients(preIngredients => [...preIngredients, newIngredient]); // Update state to trigger re-render
 
-        console.log("Updated ingredients:", ingredients);
-     
     }
   return (
     <div className="main-container">
