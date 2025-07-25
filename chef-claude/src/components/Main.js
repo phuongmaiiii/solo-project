@@ -8,7 +8,7 @@ function Main() {
                 </li>
             ));
 
-    function handleSubmit(formData) {
+    function addIngredient(formData) {
         /*event.preventDefault();
 
         const formData = new FormData(event.currentTarget);
@@ -24,7 +24,7 @@ function Main() {
     }
   return (
     <div className="main-container">
-        <form action={handleSubmit} className="ingredient-form">
+        <form action={addIngredient} className="ingredient-form">
             <input  aria-label="Add ingredient" 
                     type="text" 
                     placeholder="e.g. pasta carbonara"
@@ -32,10 +32,21 @@ function Main() {
                     />
             <button type="submit">+ Add ingredient</button>
         </form>
-        <h2>Ingredients on hand: </h2>
-        <ul>
-          {ingredientListItems}
-        </ul>
+        {ingredients.length > 0 && 
+        <section>
+          <h2>Ingredients on hand: </h2>
+          <ul className="ingredients-list" aria-live="polite">
+            {ingredientListItems}
+          </ul>
+          { ingredients.length > 3 &&
+            <div className="get-recipe-container">
+                    <div>
+                        <h3>Ready for a recipe?</h3>
+                        <p>Generate a recipe from your list of ingredients.</p>
+                    </div>
+                    <button>Get a recipe</button>
+                </div>}
+        </section>}
     </div>
   );
 }

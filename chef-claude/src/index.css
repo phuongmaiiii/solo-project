@@ -54,3 +54,35 @@ form > button {
   margin-top: 48px;
 
 }
+.get-recipe-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  padding: 28px 42px;
+  border: none;
+  border-radius: 8px;
+  background-color: #F0EFEB;
+  align-items: center;
+}
+
+.get-recipe-container h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 24px;
+}
+.get-recipe-container p {
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: #6B7280
+}
+.get-recipe-container button {
+  font-family: Inter, sans-serif;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  background: #D17557;
+  color: #FAFAF8;
+  padding: 9px 17px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
