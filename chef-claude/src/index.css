@@ -54,6 +54,10 @@ form > button {
   margin-top: 48px;
 
 }
+.ingredients-list > li {
+    color: #475467;
+    line-height: 28px;
+}
 .get-recipe-container {
   display: flex;
   justify-content: space-between;
@@ -85,4 +89,20 @@ form > button {
   padding: 9px 17px;
   font-size: 0.875rem;
   cursor: pointer;
+}
+
+.suggested-recipe{
+    margin-top: 60px;
+}
+
+.suggested-recipe-container {
+    margin-top: 24px;
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
 }
