@@ -1,7 +1,8 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
+import Header from "./Header";
+import Main from "./Main";
 
 function App() {
+
   return (
     <>
       <Header />
